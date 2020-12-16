@@ -111,3 +111,21 @@ After Effect</a></h3>
         </div>
     </div>
 </section>
+<div class="counter-up-sction">
+  <div class="container">
+    <div class="row pt-100px">
+        <div class="col-sm-4">
+          <span class="counter">3900</span> <span class="safix">+</span>
+          <p class="course-update">Course & Apecializations</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="counter">15</span> <span class="safix">+</span>
+          <p class="course-update">Professional Certificates</p>
+        </div>
+        <div class="col-sm-4">
+          <span class="counter">15</span> <span class="safix">+</span>
+          <p class="course-update">Professional Certificates</p>
+        </div>
+    </div>
+  </div>
+</div>

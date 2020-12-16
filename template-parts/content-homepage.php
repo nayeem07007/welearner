@@ -12,6 +12,7 @@
         <?php get_template_part( 'template-parts/sections/content', 'topic' ); ?>
         <?php get_template_part( 'template-parts/sections/tranding', 'course' ); ?>
         <?php get_template_part( 'template-parts/sections/toprated', 'course' ); ?>
+        <?php get_template_part( 'template-parts/sections/content', 'testimonial' ); ?>
 		<?php the_content(); ?>
 	</div><!-- .entry-content -->
 

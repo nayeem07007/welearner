@@ -16,6 +16,8 @@ function welearner_static_scripts() {
 
 
 	wp_enqueue_script( 'welearner-navigation', get_template_directory_uri() . '/assets/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'waypoints', get_template_directory_uri() . '/assets/js/waypoints.min.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'jquery-counterup', get_template_directory_uri() . '/assets/js/jquery.counterup.min.js', array(), _S_VERSION, true );
 	wp_enqueue_script( 'bootstrap', get_template_directory_uri() . '/assets/js/bootstrap.min.js', array( 'jquery' ), _S_VERSION, true );
 	wp_enqueue_script( 'welearner-scrpt', get_template_directory_uri() . '/assets/js/script.js', array( 'jquery' ), _S_VERSION, true );
 
