@@ -46,6 +46,7 @@ if ( ! function_exists( 'welearner_setup' ) ) :
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
+		add_image_size( 'post-image', '420', '245', true );
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus(
@@ -167,4 +168,36 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+// unyson 
+function welearner_framework_customizations_path($rel_path) {
+    return '/inc/theme-customizer';
+}
+add_filter('fw_framework_customizations_dir_rel_path', 'welearner_framework_customizations_path');
 
+function welearner_remove_dms_settings() {
+    remove_submenu_page( 'themes.php', 'dms-settings' );
+}
+add_action( 'admin_menu', 'welearner_remove_dms_settings', 999 );
+
+function include_customizer_options( $option_list ) {
+	$options = [];
+	foreach($option_list as $option){
+		$options[] = dms()->theme->get_options( 'customizer/options-' . $option );
+	}
+
+	return $options;
+}
+
+function _customizer_options() {
+	$option_list = [
+		'general',
+		'banner',
+		'style',
+		'header',
+		'blog',
+		'instagram',
+		'footer',
+	];
+
+	// return self::include_customizer_options($option_list);
+}

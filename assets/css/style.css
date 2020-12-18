@@ -245,6 +245,15 @@ body {
   .course-meta{
       margin-top: 20px;
   }
+  .user-meta img{
+      border-radius: 100%;
+      margin-right: 10px;
+  }
+  .user-meta{
+      color: #1C2D41;
+      opacity: .5;
+
+  }
   .course-meta .category a{
       font-family: 'Circular Std';
       font-size: 16px;
@@ -492,4 +501,73 @@ body {
     -webkit-transform: translateX(5px);
             transform: translateX(5px);
 
+  }
+  /*Footer Logo*/
+
+  .site-footer{
+      background-color: #021E40;
+      padding: 100px;
+  }
+  .footer-static-content p{
+    font-size: 16px;
+    color: #788595;
+    margin: 30px 0 100px 0;
+  }
+  .footer-social{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+  }
+  .footer-social li{
+      display: inline-block;
+  }
+  .footer-social li:not(:last-child){
+    margin-right: 5px;
+  }
+  .footer-social li a{
+      display: block;
+      font-size: 18px;
+      background-color: #394D65;
+      text-align: center;
+      border-radius: 10px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+  }
+  .footer-social li a i{
+    transition: all .4s;
+  }
+  .footer-social li a i.fa-facebook-f{
+      color: #037BF4;
+  }
+  .footer-social li a i.fa-twitter{
+      color: #03A9F4;
+  }
+  .footer-social li a i.fa-linkedin-in{
+      color: #67B3FF;
+  }
+  .footer-social li:hover a i{
+      color: #fff;
+  }
+  .footer-widgets-title{
+      font-size: 20px;
+      color: #fff;
+      margin-bottom: 35px;
+  }
+  .footer-widget-wrapper ul{
+      padding: 0;
+      margin: 0;
+      list-style: none;
+  }
+  .footer-widget-wrapper li {
+      margin-bottom: 10px;
+  }
+  .footer-widget-wrapper li a{
+      color: #788595;
+      font-size: 16px;
+      text-decoration: none;
+  }
+
+  .footer-widget-wrapper li:hover a{
+      text-decoration: underline;
   }
