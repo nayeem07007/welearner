@@ -31,7 +31,7 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>">
+    
 		<?php 
 		 if(has_custom_logo()) {
 			the_custom_logo();
@@ -40,7 +40,7 @@
 		 }
 		
 		 ?>
-	</a>
+	
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
 	
 	<?php
