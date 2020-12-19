@@ -1,44 +1,36 @@
 # Welearner Theme Documentation
 
-Git link
+Git link  https://github.com/nayeem07007/welearner
 
-## Basic Usage
+## Requirement 
+PHP - 7.4
+WordPress - 5.6 
+MySQL version 5.6 or greater OR MariaDB version 10.1 or greater.
 
-There are two commands, and they use the same arguments which are explained below.
+## Required plugin 
 
-* `npm run build -- <arguments>`
-  * This generates the content.
-* `npm start -- <arguments>`
-  * This generates and also starts a local web server on port 4000.
+welearner assistance 
+unyson 
+safe svg
 
-## Arguments
+## Cutomize Header 
 
-* `--config-pkg <node-pkg>`
-  * Where `<node-pkg>` is a Hexo configuration, such as `apollo-hexo-config`.
-  * Either this option, or the next option are required.
-* `--config-dir <path>`
-  * Where `<path>` is a local checkout of the configuration.
-  * Either this option, or the previous option is required.
-* `--theme-dir <path>` (defaults to `meteor-theme-hexo` installed from npm)
+Customizer option -> Welearner options 
 
-## Examples
+## Customize Footer  
 
-**For the configuration, use your local checkout which is alongside this theme in `../apollo-hexo-config` along with a local copy of the theme which is alongside in `../meteor-theme-hexo`.
-```
-npm start --  --config-dir ../apollo-hexo-config --theme-dir ../meteor-theme-hexo
-```
+wp admin -> We learner  opton page 
 
-**Use the Apollo config from npm, but the local checkout of the theme.
-```
-npm start --  --config-pkg apollo-hexo-config --theme-dir ../meteor-theme-hexo
-```
+## Section dispaly 
 
-**Use the (published) Apollo config and the theme, both via npm install.
-```
-npm start -- --config-pkg apollo-hexo-config
-```
+Section dispaly from template-parts/sections 
 
-**Use the (published) Meteor config and the theme, both via npm install.
-```
-npm start --  --config-pkg meteor-hexo-config
-```
+## page tempalte location 
+
+  template folder 
+
+## assistance plugin location 
+
+theme folder --> welerner -> plugin
+
+Thanks for revew my work 
