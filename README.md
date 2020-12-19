@@ -10,9 +10,9 @@ MySQL version 5.6 or greater OR MariaDB version 10.1 or greater.
 
 ## Required plugin 
 
-welearner assistance 
-unyson 
-safe svg
+welearner assistance, 
+unyson, 
+safe svg, 
 
 ## Cutomize Header 
 
