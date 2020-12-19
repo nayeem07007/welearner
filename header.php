@@ -79,9 +79,9 @@
 		
 		<!--Header form-->
 		<form method="GET" class="course-search-form" action="<?php echo esc_url(home_url( '/' )); ?>">
-			<input type="search" placeholder="<?php echo esc_attr__('What do you want to learn?', 'welearn') ?>" class="course-search form-control rounded-0" value="<?php echo get_search_query() ?>" name="s">
+			<input type="search" placeholder="<?php echo esc_attr__('What do you want to learn?', 'welearner') ?>" class="course-search form-control rounded-0" value="<?php echo get_search_query() ?>" name="s">
 			<input type="hidden" name="post_type" value="courses" />
-			<button type="search" class="course-search-btn btn position-absolute"><?php echo esc_html__('Search', 'welearn') ?> </button>
+			<button type="search" class="course-search-btn btn position-absolute"><?php echo esc_html__('Search', 'welearner') ?> </button>
 		</form>
 	
 	</div>
