@@ -12,10 +12,12 @@
         <?php get_template_part( 'template-parts/sections/content', 'topic' ); ?>
         <?php get_template_part( 'template-parts/sections/tranding', 'course' ); ?>
         <?php get_template_part( 'template-parts/sections/toprated', 'course' ); ?>
+        <?php get_template_part( 'template-parts/sections/content', 'counter' ); ?>
         <?php get_template_part( 'template-parts/sections/content', 'testimonial' ); ?>
         <?php get_template_part( 'template-parts/sections/content', 'client' ); ?>
         <?php get_template_part( 'template-parts/sections/content', 'creator' ); ?>
         <?php get_template_part( 'template-parts/sections/content', 'blog' ); ?>
+        <?php get_template_part( 'template-parts/sections/content', 'calltoaction' ); ?>
 	</div><!-- .entry-content -->
 
 	<?php if ( get_edit_post_link() ) : ?>

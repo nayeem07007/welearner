@@ -24,7 +24,9 @@ body {
   h4 {
       font-weight: 700;
   }
-  
+  .position-relative {
+      position: relative;
+  }
   .header{
       background-color: #3028AF;
       position: relative;
@@ -208,18 +210,19 @@ body {
      line-height: 30px;
   }
   .disply-topic .welernar-topic-taxonomy{
-      min-height: 89px;
-      padding: 14px 0 14px 30px;
-      border: 1px solid;
-      border-color: #E8EAEC;
-      border-radius: 10px;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      margin-bottom: 50px;
-      text-decoration: none;
-      color: #1C2D41;
-  }
+    min-height: 89px;
+    padding: 14px 0 14px 30px;
+    border: 1px solid;
+    border-color: #E8EAEC;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 50px;
+    text-decoration: none;
+    color: #1C2D41;
+    align-items: center;
+}
   .disply-topic .topic-taxonomy {
     padding-left: 20px;
   }
@@ -383,8 +386,10 @@ body {
   .tested-client-section{
       padding: 140px 0 90px;
   }
-  .clinet-logo a:not(:last-child) {
+  .clinet-logo span:not(:last-child) {
       margin-right: 70px;
+      margin-bottom: 20px;
+      display: inline-block
   }
   .patner-title{
       margin-bottom: 70px;
@@ -429,6 +434,7 @@ body {
   
   .team-social-icon ul li a{ 
      color: #fff;
+     text-decoration: none;
   }
   .team-social-icon ul li:hover  a{ 
      -webkit-transform: scale3d(360deg); 
@@ -455,7 +461,12 @@ body {
       display: block;
       line-height: 14px;
   }
-  
+  .blog-section{
+    margin-top: 70px;
+    background: url(../img/blog_bg.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+  }
   .blog-content h4{
       font-size: 20px;
       line-height: 30px;
@@ -472,8 +483,12 @@ body {
       width: 500px;
       max-width: 100%;
   }
+  .coll-to-action-secton{
+      padding: 145px 0 95px 0;
+  }
   .call-to-action-content{
       padding: 60px;
+      min-height: 350px;
   }
   .call-to-action-content h4{
       font-size: 44px;
@@ -506,7 +521,8 @@ body {
 
   .site-footer{
       background-color: #021E40;
-      padding: 100px;
+      padding: 125px;
+      position: relative;
   }
   .footer-static-content p{
     font-size: 16px;
@@ -570,4 +586,101 @@ body {
 
   .footer-widget-wrapper li:hover a{
       text-decoration: underline;
+  }
+
+  .f-icon1{
+      left: -55px;
+      top: 105px;
+  }
+  .f-icon2 {
+      bottom: 40px;
+      left: 60px;
+  }
+  .f-icon3 {
+      top: 40px;
+      left: 25%;
+  }
+  .f-icon4{
+      top: 100%;
+      right: 10px;
+  }
+  .f-icon5{
+      left: 100%;
+      top: -12px;
+  }
+
+  /*
+   * Responsive design 
+  */
+  @media only screen and (max-width: 991px) {
+    .navbar-nav{
+        margin: 10px 0 0 0;
+    }
+    .btn-nav-start  {
+        margin-top: 15px;
+    }
+
+  }
+@media only screen and (max-width: 767px) {
+    .header-content-area h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .header-content-area p {
+        font-size: 17px;
+        line-height: 16px;
+        margin-top: 15px;
+    }
+    .welearner-nav{
+        padding: 50px 0;
+    }
+    .header {
+        height: initial;
+        padding-bottom: 50px;
+    }
+    .main-image {
+        right: 0;
+        max-width: 50%;
+    }
+    .top-rgiht-image {
+        width: 60%;
+    }
+    .disply-topic .welernar-topic-taxonomy{
+      font-size: 20px;
+    }
+    .section-title h2, 
+    .testimonila-heading-section h3,
+    .call-to-action-content h4, 
+    .section-title h3{
+        font-size: 30px;
+    }
+    .team-content .col-sm-4{
+        margin-bottom: 30px;
+    }
+    .site-footer{
+        padding: 125px 15px;
+        overflow: hidden;
+    }
+    .clinet-logo span:not(:last-child){
+        margin: 0 10px 20px 0;
+    }
+  
+  }
+
+  @media only screen and (max-width: 512px) {
+      .course-search-btn{
+        position: relative !important;
+        width: 100%;
+        margin-left: 12px;
+      }
+      .btn-call-to-action {
+        padding: 15px 30px;
+    }
+    .clinet-logo span:not(:last-child){
+        margin: 0 10px 20px 0;
+        display: block;
+    }
+    .call-to-action-content{
+        padding: 20px;
+    }
   }

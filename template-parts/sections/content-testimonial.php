@@ -56,17 +56,5 @@
     <!-- our tested client say-->
 </div>
 
-<div class="coll-to-action-secton">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="call-to-action-content text-center" style="background-color:#FFE2E2">
-                    <h4>Become an instructor</h4>
-                    <p>Top instructors from around the world teach millions of students on Udemy. We provide the tools and skills to teach what you love.</p>
-                    <a href="" class="btn btn-call-to-action">Get Join</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 

@@ -187,17 +187,3 @@ function include_customizer_options( $option_list ) {
 
 	return $options;
 }
-
-function _customizer_options() {
-	$option_list = [
-		'general',
-		'banner',
-		'style',
-		'header',
-		'blog',
-		'instagram',
-		'footer',
-	];
-
-	// return self::include_customizer_options($option_list);
-}

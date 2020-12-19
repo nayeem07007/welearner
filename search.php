@@ -33,7 +33,19 @@ get_header();
 				 * If you want to overload this in a child theme then include a file
 				 * called content-search.php and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'search' );
+				if ( isset( $_GET['post_type'] ) && $_GET['post_type'] ) {
+
+					// save it for later
+					$post_type = $_GET['post_type'];
+				
+					// check to see if a search template exists
+					if ( locate_template( 'search-' . $post_type . '.php' ) ) {
+						// load it and exit
+						get_template_part( 'search', $post_type );
+						exit;
+					}
+				
+				}
 
 			endwhile;
 

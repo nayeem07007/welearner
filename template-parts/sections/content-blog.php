@@ -21,7 +21,7 @@
                     <?php if(has_post_thumbnail(  )) :  ?> 
                     <div class="blog-img">
                         <a href="<?php echo esc_url(get_the_permalink()); ?>">
-                           <?php the_post_thumbanil('post-image'); ?> 
+                           <?php the_post_thumbnail('post-image'); ?> 
                         </a>
                     </div>
                     <?php endif; ?> 

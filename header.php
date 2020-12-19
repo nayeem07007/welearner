@@ -63,13 +63,25 @@
 		<div class="header-content-area">
 		<img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/header/content-icon.png'); ?>" alt="icon" class="content-icon-1 position-absolute">
 		<div class="contnt-dot position-absolute"></div>
-		<h1>Discover a new way of learning </h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper dapibus turpis vel pellentesque. </p>
+		<?php 
+		 
+		 $heading_title = '';
+		 $heading_description = '';
+
+		 if(defined('FW')) {
+			$heading_title = fw_get_db_customizer_option('heading_title');
+			$heading_description = fw_get_db_customizer_option('heading_description');
+		 }
+		
+		?> 
+		<h1><?php echo esc_html($heading_title); ?> </h1>
+		<p><?php echo esc_html($heading_description); ?> </p>
 		
 		<!--Header form-->
-		<form action="" class="course-search-form">
-			<input type="search" placeholder="What do you want to learn?" class="course-search form-control rounded-0">
-			<button type="search" class="course-search-btn btn position-absolute">Search</button>
+		<form method="GET" class="course-search-form" action="<?php echo home_url( '/' ); ?>">
+			<input type="search" placeholder="<?php echo esc_attr__('What do you want to learn?', 'welearn') ?>" class="course-search form-control rounded-0" value="<?php echo get_search_query() ?>" name="s">
+			<input type="hidden" name="post_type" value="courses" />
+			<button type="search" class="course-search-btn btn position-absolute"><?php echo esc_html__('Search', 'welearn') ?> </button>
 		</form>
 	
 	</div>

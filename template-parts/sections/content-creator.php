@@ -33,7 +33,7 @@
                 <div class="team-loop-wrapper">
 
                 <div class="team-image" <?php echo esc_attr($create_bg);  ?> >
-                    <?php if(has_post_thumbnail()) : the_post_thumbnail([354, 354]);  endif; ?> 
+                    <?php if(has_post_thumbnail()) : ?> <a href="<?php echo esc_url(get_the_permalink()); ?>"><?php  the_post_thumbnail([354, 354]); ?> </a><?php  endif; ?> 
                     <div class="team-social-icon">
                         <?php 
                         
