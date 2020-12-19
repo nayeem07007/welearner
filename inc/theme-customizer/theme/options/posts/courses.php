@@ -4,18 +4,18 @@
  */
 $options = array(
 	'settings_courses' => array(
-		'title'		 => esc_html__( 'Course settings', 'welerner' ),
+		'title'		 => esc_html__( 'Course settings', 'welearner' ),
 		'type'		 => 'box',
 		'priority'	 => 'high',
 		'options'	 => array(
 			
 			'course_price'	 => array(
 				'type'	 => 'text',
-				'label'	 => esc_html__( 'Course price', 'welerner' ),
+				'label'	 => esc_html__( 'Course price', 'welearner' ),
 			),
 			'course_sell_price'	 => array(
 				'type'	 => 'text',
-				'label'	 => esc_html__( 'Course sell price', 'welerner' ),
+				'label'	 => esc_html__( 'Course sell price', 'welearner' ),
             ),
             'taxonomy_bg_color' => array (
                 'type'  => 'color-picker',

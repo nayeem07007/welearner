@@ -12,13 +12,13 @@
 ?>
 
 	<footer id="colophon" class="site-footer">
-	   <img src="<?php echo get_template_directory_uri().'/assets/img/footer/f1.png'; ?>" alt="footer icon 1" class="position-absolute f-icon1">
-	   <img src="<?php echo get_template_directory_uri().'/assets/img/footer/f2.png'; ?>" alt="footer icon 2" class="position-absolute f-icon3">
-	   <img src="<?php echo get_template_directory_uri().'/assets/img/footer/f3.png'; ?>" alt="footer icon 2" class="position-absolute f-icon2">
+	   <img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/footer/f1.png'); ?>" alt="footer icon 1" class="position-absolute f-icon1">
+	   <img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/footer/f2.png'); ?>" alt="footer icon 2" class="position-absolute f-icon3">
+	   <img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/footer/f3.png'); ?>" alt="footer icon 2" class="position-absolute f-icon2">
 		<div class="container position-relative">
 
-		<img src="<?php echo get_template_directory_uri().'/assets/img/footer/f4.png'; ?>" alt="footer icon 1" class="position-absolute f-icon4">
-	   <img src="<?php echo get_template_directory_uri().'/assets/img/footer/f5.png'; ?>" alt="footer icon 2" class="position-absolute f-icon5">
+		<img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/footer/f4.png'); ?>" alt="footer icon 1" class="position-absolute f-icon4">
+	   <img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/footer/f5.png'); ?>" alt="footer icon 2" class="position-absolute f-icon5">
 		
 	   <div class="row">
 				<div class="col-sm-3">

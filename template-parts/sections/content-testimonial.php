@@ -50,7 +50,7 @@
                 </div>
                 <?php } ?> 
             </div> 
-           <?php endwhile; wp_reset_postdata(); }else echo esc_html__('No testimonial Found', 'welerner'); ?> 
+           <?php endwhile; wp_reset_postdata(); }else echo esc_html__('No testimonial Found', 'welearner'); ?> 
         </div>
     </div>
     <!-- our tested client say-->

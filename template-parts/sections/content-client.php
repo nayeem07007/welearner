@@ -1,5 +1,5 @@
 <div class="container tested-client-section text-center">
-        <small class="patner-title"><?php echo esc_html__('Trusted by content creators across the world', 'welerner') ?> </small>
+        <small class="patner-title"><?php echo esc_html__('Trusted by content creators across the world', 'welearner') ?> </small>
         <div class="clinet-logo">
             <?php 
             $client_logo = '';

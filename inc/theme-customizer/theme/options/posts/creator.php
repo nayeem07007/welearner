@@ -4,18 +4,18 @@
  */
 $options = array(
 	'settings_testimonail' => array(
-		'title'		 => esc_html__( 'Creator settings', 'welerner' ),
+		'title'		 => esc_html__( 'Creator settings', 'welearner' ),
 		'type'		 => 'box',
 		'priority'	 => 'high',
 		'options'	 => array(
 			
 			'creator_designation'	 => array(
 				'type'	 => 'text',
-				'label'	 => esc_html__( 'Designation', 'welerner' ),
+				'label'	 => esc_html__( 'Designation', 'welearner' ),
             ),
             'creator_img_bg'	 => array(
                 'type'  => 'rgba-color-picker',
-                 'label' => __('Creator Background Color', '{domain}'),
+                 'label' => __('Creator Background Color', 'welearner'),
             ),
             
             'creator_social_media_client_designation'	 => array(
