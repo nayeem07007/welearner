@@ -18,7 +18,7 @@
                  
                  while($courses->have_posts()) : $courses->the_post();
                  
-                 get_template_part('template-parts/sections/content', 'course-loop');
+                get_template_part('template-parts/sections/content', 'course-loop');
 
                 endwhile;
                  
@@ -27,8 +27,8 @@
                 }; 
                 
                 ?>
-            
-           
+        
         </div>
-    </div>
+        </div>
+  
 </section>

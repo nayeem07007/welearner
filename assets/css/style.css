@@ -648,6 +648,9 @@ body {
     .disply-topic .welernar-topic-taxonomy{
       font-size: 20px;
     }
+    .welernar-topic-taxonomy:hover {
+        text-decoration: underline;
+    }
     .section-title h2, 
     .testimonila-heading-section h3,
     .call-to-action-content h4, 

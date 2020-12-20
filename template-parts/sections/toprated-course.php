@@ -20,4 +20,5 @@
                 endwhile; } else {echo esc_html__('No Course Found', 'welearner'); }; ?>
     </div>
   </div>
-</div>
+
+</section>

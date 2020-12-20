@@ -31,7 +31,6 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    
 		<?php 
 		 if(has_custom_logo()) {
 			the_custom_logo();
@@ -40,7 +39,6 @@
 		 }
 		
 		 ?>
-	
     <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo03">
 	
 	<?php
@@ -81,13 +79,13 @@
 		<form method="GET" class="course-search-form" action="<?php echo esc_url(home_url( '/' )); ?>">
 			<input type="search" placeholder="<?php echo esc_attr__('What do you want to learn?', 'welearner') ?>" class="course-search form-control rounded-0" value="<?php echo get_search_query() ?>" name="s">
 			<input type="hidden" name="post_type" value="courses" />
-			<button type="search" class="course-search-btn btn position-absolute"><?php echo esc_html__('Search', 'welearner') ?> </button>
+			<button type="submit" class="course-search-btn btn position-absolute"><?php echo esc_html__('Search', 'welearner') ?> </button>
 		</form>
 	
 	</div>
 	
-       <!-- Main image --->
-		<img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/header/images.png'); ?>" alt="main image" class="main-image position-absolute">
+       
+		<img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/Images.png'); ?>" alt="main image" class="main-image position-absolute">
 		<img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/header/donted.png'); ?>" alt="dotted" class="dotted-image-botton position-absolute">
 		<img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/header/letmain-crcile.png'); ?>" alt="dotted" class="left-image-cricle position-absolute">
 		<img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/header/botton-dont.png'); ?>" alt="dotted" class="botton-dot-with-cricle position-absolute">
@@ -96,6 +94,6 @@
 		    <img src="<?php echo esc_url(get_template_directory_uri().'/assets/img/header/top_rgiht.png'); ?>" alt="top_" class="top-right">
 		 </div>
 		
-	</div>
+
 </div>
 </header>	

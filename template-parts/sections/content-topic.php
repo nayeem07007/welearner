@@ -44,7 +44,11 @@
                 <a href="<?php echo esc_url(get_term_link($topic->slug, 'topic')); ?>" class="welernar-topic-taxonomy">
                     <?php if('' != $icon_id) : ?> 
                         <div class="icon" <?php echo esc_attr($style); ?>>
-                            <?php echo wp_get_attachment_image($icon_id, [56, 57]); ?>
+                            
+                            <?php 
+                             $icon_url = wp_get_attachment_image_src($icon_id, [56, 57]);
+                             //echo wp_get_attachment_image($icon_id, [56, 57]); ?>
+                            <img src="<?php echo esc_url($icon_url[0]); ?>" alt="icon">
                         </div>
                     <?php endif; ?> 
                     <div class="topic-taxonomy">
